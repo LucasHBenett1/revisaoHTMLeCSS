@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>página 05</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Imagens/logo.ico.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Curso em foto</h1>
+        <p>Revisando o conteúdo aprendido no módulo 02 do Curso em vídeo</p>
+    </header>
+
+    <nav>
+    <a href="pag01.html">Cores</a>
+    <a href="pag02.html">Tipografia</a>
+    <a href="pag03.html">Seletores</a>
+    <a href="pag04.html">Modelo de caixas</a>
+    <a href="pag05.html">Responsividade</a>
+    </nav>
+    
+    <main>
+        <article>
+            <h1>Responsividade</h1>
+            A responsividade em sites refere-se à capacidade de um site ajustar automaticamente seu layout e conteúdo com base no tamanho e na resolução da tela do dispositivo que está sendo usado para visualizá-lo. Isso significa que, independentemente de você estar acessando o site em um computador, tablet ou smartphone, a experiência de navegação será otimizada e intuitiva.
+
+            <h2>Imagem</h2>
+            <p>Para fazer uma imagem responsiva em html devemos adicionar imagens atráves da tag picture e em css adicionar em img adicionar o atributo "width: 100%"; fazendo assim com que a imagem seja trocada conforme o tamanho da imagem, e que ela seja centralizada.</p>
+
+            <h2>Video</h2>
+            <p>Para deixar um video centralizado utilizamos a seguinte gambiara codal: <br>
+
+                div.video{ &lt;- criamos uma div para envelopar o video <br> 
+                    padding-bottom: 59%; &lt;- adiciona  preenchimento para manter a proporção <br>
+                    position: relative;  &lt;- posição como relativa, ouseja pode ser posicionada conforme a sua posição<br>
+                } <br>
+                
+                div.video > iframe{ <br>
+                    position: absolute; &lt;- define posição como absoluta <br> 
+                    top:5%; &lt;- Posiciona o iframe 5% a partir do topo da div.video.<br>
+                    right:5%; &lt;- Posiciona o iframe 5% a partir da direita da div.video. <br>
+                    width: 90%; &lt;-  width: 90%;: Define a largura do iframe como 90% da largura da div.video. <br>
+                    height: 90%; &lt;- height: 90%;: Define a altura do iframe como 90% da altura da div.video. <br>
+                } <br>
+            </p>
+        </article>
+        <aside>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/WcGPSeuJDJ0?si=x6kTsd27Uzfwo74m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </aside>
+    </main>
+   
+
+    <footer>
+        <p>Site criado por <strong>Lucas Honorato Benetti</strong></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 03</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Imagens/logo.ico.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1>Curso em foto</h1>
+        <p>Revisando o conteúdo aprendido no módulo 02 do Curso em vídeo</p>
+    </header>
+    <nav>
+        <a href="pag01.html">Cores</a>
+        <a href="pag02.html">Tipografia</a>
+        <a href="pag03.html">Seletores</a>
+        <a href="pag04.html">Modelo de caixas</a>
+        <a href="pag05.html">Responsividade</a>
+    </nav>
+
+
+<main>
+    <article>
+        <h1>Seletores</h1>
+        <p>
+            <h2>Class (.)</h2>
+            <p>Em CSS, o seletor class é usado para aplicar estilos a múltiplos elementos HTML que compartilham o mesmo atributo class. A sintaxe para usar uma classe é preceder o nome da classe com um ponto(.).  <br>
+             Por exemplo: <br>
+            .minhaClasse { color: blue; } 
+            <br>
+            Aplicará a cor azul ao texto de todos os elementos com a classe “minhaClasse”.</p>
+        </p>
+        
+        <h2>Id(#)</h2>
+        <p>O seletor id é usado para aplicar estilos a um elemento HTML específico que possui um atributo id único. A sintaxe para usar um id é preceder o nome do id com um cerquilha (#). Por exemplo, #meuID { color: red; } aplicará a cor vermelha ao texto do elemento com o id “meuID”.</p>
+        
+        <h2>combinadores de CSS</h2>
+        <p>são usados para definir a relação entre seletores e aplicar estilos a elementos específicos dentro de outros elementos.</p>
+        
+        <ul>
+            <li><strong>Seletor descendente( ):</strong> é usado para selecionar todos os elementos que são descendentes de um elemento específico, ou seja que estão dentro dele independentemente da profundidade. A sintaxe é simplesmente um espaço entre dois seletores. Por exemplo, div p seleciona todos os elementos p que estão dentro da div.</li>
+        
+            <li><strong>Seletor Filho (>):</strong> O seletor filho é usado para selecionar elementos que são filhos imediatos de um elemento específico. Isso significa que ele só aplica estilos aos elementos que estão diretamente dentro do elemento pai, ignorando qualquer elemento aninhado mais profundamente.</li>
+        </ul>
+        
+        <h2>Pseudo Classe(:)</h2>
+        <p>Uma pseudo-classe em CSS é uma palavra-chave adicionada a um seletor que especifica um estado especial do elemento selecionado. Elas permitem que você aplique estilos a um elemento não apenas com base na sua posição na árvore do documento, mas também em relação a fatores externos, como a interação do usuário ou o estado do elemento.</p>
+        <p>exemplo:</p>
+        <ul>
+            <li><strong>:hover:</strong> Aplica um estilo quando o usuário passa o cursor sobre o elemento.</li>
+            <li><strong>:visited:</strong> Aplica estilo a um link que foi visitado.</li>
+        </ul>
+        
+        <h2>Pseudo elemento(::)</h2>
+
+        <p>
+            Um pseudo-elemento em CSS é uma palavra-chave adicionada a um seletor que permite estilizar partes específicas de um elemento.
+            exemplo:
+        </p>
+
+        <ul>
+            <li><strong>::before:</strong> Insere conteúdo antes do conteúdo real de um elemento.</li>
+            <li><strong>::after:</strong> Insere conteúdo após o conteúdo real de um elemento.</li>
+        </ul>
+
+        <aside>
+            <h2>Saiba mais</h2>
+            <div  class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/zXfTjPrMC_0?si=kv_uB_PrydrDwZVK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </aside>
+        
+    </article>
+</main>
+
+<footer>
+    <p>Site criado por <strong>Lucas Honorato Benetti</strong></p>
+</footer>
+
+</body>
+</html>

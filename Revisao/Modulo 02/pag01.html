@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 01</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Imagens/logo.ico.ico" type="image/x-icon">
+</head>
+<body>
+
+<header>
+   <h1>Curso em foto</h1>
+   <p>Revisando o conteúdo aprendido no módulo 02 do Curso em vídeo</p>
+</header>
+<nav>
+    <a href="pag01.html">Cores</a>
+    <a href="pag02.html">Tipografia</a>
+    <a href="pag03.html">Seletores</a>
+    <a href="pag04.html">Modelo de caixas</a>
+    <a href="pag05.html">Responsividade</a>
+</nav>
+
+<main>
+    <article>
+        <h1>Cores</h1>
+        <h2>Psicologia das cores</h2>
+        <p>
+            A psicologia das cores é essencial no design, pois as cores influenciam emoções e comportamentos. No design de sites, a escolha correta das cores pode criar uma identidade visual coesa, aumentar a usabilidade e provocar reações emocionais nos visitantes, impactando a experiência do usuário e a eficácia da comunicação.
+        </p>
+        
+        <h2>Cores e seus efeitos psicológicos no design de sites</h2>
+        <p>Cores são responsáveis por causar sensações emoçõs inconscientemente, em quem as ve, recurso o qual é muito explorado no design. <br>
+        Exemplo:</p>
+
+       <ul>
+        <li>
+            <strong>Vermelho:</strong> Evoca sensações de urgência, paixão e energia. É uma cor que chama atenção e pode aumentar a excitação e a energia.
+        </li>
+        <li>
+            <strong>Verde</strong>: Está associada à natureza, tranquilidade e equilíbrio. Cria uma sensação de relaxamento e frescor.
+        </li> 
+        <li>
+            <strong>Azul</strong>: Transmite confiança, segurança e serenidade. É frequentemente usada para passar estabilidade e profissionalismo
+        </li>
+       </ul>
+
+       <picture>
+        <source media="(max-width: 650px)" srcset="Imagens/Psicologia das cores.png" >
+        <img src="Imagens/Psicologia das cores.png" alt="Psicologia das cores e tals">
+     </picture>
+        
+        <h2>Harmonia de cores </h2>
+        <p>
+            A harmonia de cores é um conceito fundamental no design, que se refere à combinação de cores de maneira agradável e equilibrada. O círculo de cores é uma ferramenta essencial para entender essas combinações. Criado por Isaac Newton em 1666, ele organiza as cores em um formato circular, mostrando as relações entre elas.
+        </p>
+        
+        <h3>Existem três principais tipos de harmonia de cores:</h3>
+        
+            <ul>
+                <li>
+                    <strong>Harmonia Análoga:</strong> Utiliza cores que estão lado a lado no círculo de cores. Por exemplo, azul, azul-verde e verde. Essa combinação cria um visual coeso e sereno, ideal para transmitir tranquilidade e unidade.
+                </li>
+                <li>
+                    <strong>Harmonia Complementar:</strong> Combina cores que estão opostas no círculo de cores, como vermelho e verde. Essa combinação oferece um contraste forte e vibrante, destacando elementos importantes e criando um impacto visual significativo
+                </li>
+                <li>
+                    <strong>Harmonia Triádica:</strong> Utiliza três cores que estão equidistantes no círculo de cores, como vermelho, azul e amarelo. Essa combinação é equilibrada e vibrante, proporcionando um visual dinâmico e harmonioso sem ser tão contrastante quanto a complementar.
+                </li>
+            </ul>
+        
+        <h2>Paleta de cores</h2>
+        <p>
+            A paleta de cores é fundamental no design, pois as cores têm o poder de evocar emoções, transmitir mensagens e criar uma identidade visual coesa. Uma escolha bem feita de cores pode melhorar a usabilidade, a estética e a percepção de uma marca ou projeto.
+        </p>
+        
+        <p>
+            É importante manter a simplicidade ao selecionar as cores, geralmente utilizando de 3 a 5 cores principais. Isso ajuda a manter a harmonia e evita sobrecarregar o visual. Além disso, limitar a quantidade de cores contribui para a consistência visual em diferentes elementos e plataformas, facilitando a criação de uma hierarquia visual clara e destacando os elementos mais importantes.
+        </p>
+        
+        <h2>Cores em css</h2>
+        <p>
+            E a gente estudou tudo isso apenas para podermos adicionar cores em nosso site de forma eficiente, e para isso existem 3 métodos para adicionar cores em css, e eles são:
+        </p>
+        
+        <ul>
+        
+                <li>
+                    <strong>Nomes de cores:</strong> CSS permite o uso de nomes de cores predefinidos, como red, blue, green, entre outros. Essa é uma maneira simples e direta de aplicar cores, especialmente para as mais comuns. Por exemplo, para definir a cor do texto como vermelho, você pode usar: <br>
+                    CSS<br>
+                    color: red;
+                </li>
+        
+        
+                <li>
+                    <strong>Valores Hexadecimais:</strong> Outra forma popular de definir cores é através de valores hexadecimais. Esses valores começam com # seguido por seis caracteres (números e/ou letras) que representam as intensidades das cores primárias (vermelho, verde e azul). Por exemplo, para definir a cor vermelha, você pode usar: <br>
+                    CSS <br>
+                    color: #ff0000;
+                </li>
+        
+        
+        
+                <li>
+                    <strong>Valores RGB:</strong> A função rgb() permite especificar cores usando valores de 0 a 255 para as intensidades de vermelho, verde e azul. Essa abordagem oferece uma grande flexibilidade na criação de cores personalizadas. Por exemplo, para definir a cor vermelha, você pode usar:<br>
+                    CSS <br>
+                    color: rgb(255, 0, 0);
+                </li>
+        </ul>
+        
+        <aside>
+            <h2>Saiba mais</h2>
+                <div  class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/A8UNBs7nxw4?si=Ln1zB05XGlepsc-v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+        </aside>
+        
+    </article>
+</main>
+
+<footer>
+    <p>Site criado por <strong>Lucas Honorato Benetti</strong></p>
+</footer>
+    
+</body>
+</html>

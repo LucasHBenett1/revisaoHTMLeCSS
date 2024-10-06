@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<body>
+    <h1>Links Internos</h1>
+    <p>São links que utilizamos para navegar entre as páginas de nosso proprio site, e para isso utilizamos a tag &lt;A&gt; e dentro del adicionamos a o nome da página para a qual desejamos  navegar. <br>
+    Por exemplo: <br>
+    Para voltar para o capítulo inicial clique <a href="cap00_Introducao.html">aqui.</a></p>
+
+    <h1>Links Externos</h1>
+    <p>São links que adicionamos de outro site em nosso site. E para isso adicionamos a tag &lt;A&gt; e em "href" adicionamos o link ao qual estamos acessando. <br>
+    Por exemplo: <br>
+    <a href="https://www.youtube.com/watch?v=EOs0qeiJyIg" rel="nofollow" target="_blank">"Layla"</a> - Erick Clapton
+    </p>
+
+    <h1>Links para download</h1>
+    <p>São um metodo para criar um link para efetuar o download de um arquivo. <br>
+    Para fazer isso temos que criar uma nova pasta para adicionarmos os arquivos que desejamos que os úsuarios possam realizar o download, e adicionarmos os arquivos. Após isso temos que criar uma tag &lt;A&gt; vazia (sem envelopar nenhuma palavra), em "href" fazemos o caminho para realizarmos o downloand, e adicionamos a tag "type" e adicionamos o texto necessario para realizar o download desse tipo de documento. Todos os textos necessarios para encontrarmos um  item, encontramos no site <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank" rel="nofollow">iana.org</a>
+    <br>
+    Por exemplo: <br>
+    <ul>
+        <li><a href="downloads/04 - Primeiros passos HTML.pdf" type="application/pdf">Primeiros passos html.pdf</a></li>
+        <li><a href="downloads/04 - Primeiros passos HTML.zip" type="application/zip">Primeiros passos html.zip</a></li>
+    </ul>
+  
+
+    <h1>Parâmetros</h1>
+    <p>Grandes empresas utilizam atributos para melhorar a navegação em seu site, indicando algumas coisas para seu navegador.   
+    </p>
+    <ul>
+        <li><strong>rel</strong></li>
+        <ul type = "square">
+            <li>Esse atributo indica ao site que tipo de relacionamento aquele link tera com seu site.</li>
+            <li>"prev":  Indica que aquele link é anterior a aquele que estamos na sequencia de página de nosso site.</li>
+            <li>"next": Indica que aquele link é posterior o que estamos na sequencia de páginas de nosso site.</li>
+            <li>"nofollow": Indica que aquele link não tem ligação com nosso site.</li>
+        </ul>
+        <li><strong>target</strong></li>
+        <ul type = "square">
+            <li>Esse parâmetros indica ao navegador aonde seu link será aberto.</li>
+            <li>"_blank": Indica que esse link será aberta em uma nova aba.</li>
+            <li>"_self": Indica que esse link será aberto na mesma aba que estamos.</li>
+        </ul>
+    </ul>
+    <br>
+
+    <a href="cap04_Listas.html" rel="prev" target="_self">anterior</a> <a href="cap06_Midias.html" rel="next" target="_self">proximo</a>
+</body>
+</html>

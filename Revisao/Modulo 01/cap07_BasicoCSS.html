@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Básico CSS</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1>CSS In-line</h1>
+    <p>O css In-line é um dos três metodos utilziados para se estilzar uma página, porem ela é a menos recomendada, por ela ser bastante confusa e limitada, pois ela muda apenas uma tag por vez. Ao adicionar o parâmetro "style" e o estilo que ira utilizar.<br>
+    Exemplo: <br>
+    <code>
+        P style="color: brown;">
+    </code>
+    </p>
+
+    <h1>CSS Interno</h1>
+    <p>Por causa dessa confusão gerada no CSS Interno, foi criado outro modelo de estilização que é o  CSS Interno, cujo seu defeito consiste em só estilziar as tags d e uma única página por vez, e  essa tecnica consiste em você criar uma tag &lt;style&gt; em baixo de &lt;title&gt; e ir selecionando a tag que você deseja estilziar, por exemplo: <br>
+    <pre>
+        <code>
+            title BomTitulo title
+            style
+                h1{color: brown;}
+                body{color white;} 
+            style
+        </code>
+    </pre>
+    <br>
+
+    <h1>Estilo externo</h1>
+    <p>Sendo assim a maneira mais versatil de se adicionar um estilo em uma página, é o estilo externo, que consiste em criar uma página separada com outro estilo, fazendo assim com que todas as páginas sejam estilziadas daquela maneira. E para utilizar essa tecnica, basta ir em baixo de title, e colocar "link:css" criando assim a tag link, onde em "href" ao clicarmos em "style.css" pressionando ctrl nós criamos uma pagina separada  para adicionar estilos em uma tag da mesma forma que selecionamos que o modelo de css interno. porém  antes disso  devemos adicionar a regra "@charset "UTF-8"" para evitar erros em um CSS mais avançado. </p>
+    <br>
+    <h1>Ordem de prevalencia</h1>
+    <p>Não existe nenhum problema em utilziarmos várias tecnicas de css, como por exemplo, o modo in-line o css interno e externo, pórem existe uma ordem de prevalencia sobre qual estilziação o site vai seguir, sendo essa a ordem: in-line, css  externo, e css interno.</p>
+    <a href="cap06_Midias.html">anterior</a>
+</body>
+</html>

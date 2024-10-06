@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 04</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Imagens/logo.ico.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Curso em foto</h1>
+        <p>Revisando o conteúdo aprendido no módulo 02 do Curso em vídeo</p>
+    </header>
+
+    <nav>
+        <a href="pag01.html">Cores</a>
+        <a href="pag02.html">Tipografia</a>
+        <a href="pag03.html">Seletores</a>
+        <a href="pag04.html">Modelo de caixas</a>
+        <a href="pag05.html">Responsividade</a>
+        </nav>
+
+    <main>
+        <article>
+            <h1>Modelo de caixas</h1>
+            <p>O modelo de caixa (box model) em CSS é um conceito fundamental que descreve como os elementos HTML são representados como caixas retangulares na página. Cada caixa é composta por várias partes que determinam seu tamanho e espaçamento. Vamos detalhar cada uma dessas partes: </p>
+            <ul>
+                <li>
+                    <strong>Conteúdo (Content):</strong> É a área onde o texto e as imagens aparecem. O tamanho do conteúdo é definido pelas propriedades width e height.
+                </li>
+ 
+                <li>
+                    <strong>Preenchimento (Padding):</strong> É o espaço entre o conteúdo e a borda da caixa. O preenchimento é transparente e pode ser ajustado usando as propriedades padding-top, padding-right, padding-bottom e padding-left.
+                </li>
+    
+                <li>
+                    <strong>Borda (Border):</strong> É a linha ao redor do preenchimento e do conteúdo. A borda pode ter várias propriedades, como border-width, border-style e border-color.
+                </li>
+                 
+                <li>
+                    <strong>Margem (Margin):</strong> É o espaço fora da borda da caixa, separando a caixa de outros elementos. As margens também são transparentes e podem ser ajustadas usando as propriedades margin-top, margin-right, margin-bottom e margin-left.
+                </li>
+            </ul>
+            
+            <picture>
+                <source media="(max-width: 650px)" srcset="Imagens/Modelo de caixas.jpg" >
+                <img src="Imagens/Modelo de caixas.jpg" alt="Modelo de caixas visual">
+            </picture>
+            
+            <h2>Tipos de caixa</h2>
+            <p>
+                <ul>
+                    <li>
+                        <strong>Caixas de Bloco</strong> As caixas de bloco são elementos que ocupam toda a largura disponível do seu contêiner e sempre começam em uma nova linha. Elas respeitam as propriedades de largura e altura, e as margens, preenchimentos e bordas empurram outros elementos para fora do caminho.
+                    </li>
+
+                    <li>
+                        <strong>Caixas Inline</strong> As caixas inline são elementos que ocupam apenas o espaço necessário para o seu conteúdo e não começam em uma nova linha. Elas não respeitam as propriedades de largura e altura, mas as margens, preenchimentos e bordas laterais afetam o layout ao redor.
+                    </li>
+                </ul>
+            </p>
+            
+            <h2>Grouping TAG'S</h2>
+            <p>As grouping tags são fundamentais para criar uma estrutura HTML bem organizada e semântica. Elas ajudam a melhorar a legibilidade do código, facilitam a aplicação de estilos com CSS e a manipulação com JavaScript, além de melhorar a acessibilidade para tecnologias assistivas</p>
+            
+            <ul>
+               <li>
+                   <strong>&lt;header&gt;:</strong>
+                   O &lt;header&gt; é um elemento semântico que representa a seção de cabeçalho de uma página ou de uma seção específica. Ele geralmente contém informações introdutórias ou de navegação, como logotipos, títulos, menus de navegação e outros elementos de cabeçalho.
+               </li>
+                
+                <li>
+                    <strong>&lt;nav&gt;</strong>
+                    O &lt;nav&gt; é utilizado para agrupar links de navegação que direcionam para outras partes do site ou para páginas externas. Ele é especialmente útil para criar menus de navegação, barras laterais e rodapés com links importantes.
+                </li>
+
+                <li>
+                    <strong>&lt;main&gt;</strong>
+                    O &lt;main&gt; é um elemento semântico que representa o conteúdo principal de um documento. Ele deve conter o conteúdo que é único para a página e que não se repete em outras páginas, como artigos, seções principais de texto, imagens e vídeos.
+                </li>
+
+                <li>
+                    <strong>&lt;section&gt;</strong>
+                        O elemento &lt;section&gt; é usado para definir seções temáticas de conteúdo em um documento. Ele é ideal para agrupar conteúdo relacionado que faz parte de um tema maior.
+                </li>
+
+               <li>
+                   <strong>&lt;article&gt;</strong>
+                    O elemento &lt;article&gt; representa um conteúdo independente e auto-contido que pode ser distribuído de forma independente ou reutilizável. Isso inclui artigos de notícias, posts de blog, comentários, widgets interativos, entre outros.
+               </li>
+
+                &lt;aside&gt;
+                &lt;aside&gt; Usado para conteúdo complementar que está relacionado ao conteúdo principal, mas não é essencial. Ideal para barras laterais, notas de rodapé, e informações adicionais
+            </ul>
+        </article>
+        <aside>
+            <div  class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/JPMm-jyKOaM?si=2aNUckW8UWzajcs3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </aside>
+    </main>
+    
+    <footer>
+        <p>Site criado por <strong>Lucas Honorato Benetti</strong></p>
+    </footer>
+    
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias</title>
+</head>
+<body>
+    <h1>Imagens</h1>
+    <h2>Teoria</h2>
+    <p>Antes de começarmos a trabalhar com as imagens na parte de programação, temos que adentrar primeiramente na parte de criação e processamento de imagens. <br>
+    Portanto primeiramente temos que entender que toda imagem possui determinado peso, e isso deve ser levado em conta na criação do site, pois quanto mais pesada for a imagem, maior será o processamento que o servidor ira fazer para carregar a imagem, o que muitas vezes fazem com que aumente o preço para hospedar o site. <br>
+    Por isso primeiramente devemos entender que devemos utilziar o melhor tipo de formato para a funcionalidade que quisermos, por exemplo: o formato JPG é mais leve que o formato PNG e deve ser utilizado em quase todos os casos por esse motivo, exceto aqueles que desejamos que alguma parte da imagem seja transparente, nesse caso utilizamos o formato PNG, pois ele é o unico capaz de realizar tal feito. <br>
+    Além disso temos que entender quanto maior a imagem e maior sua resolução, mais pesada ela será por isso é necessario manter as imagens em seus tamanhos ideais, a grande 1000x1000, a media 700x700 e a pequena 300x300, e manter a resolução da imagem em no máximo 70% para que ela seja mais leve póssivel, e para modificarmos o tamanho e resolução da imagem e seu tamano, utilizaremos o aplicativo GIMP.</p>
+
+    <h2>GIMP</h2>
+    <p>Para realizar as modificações necessarias para sua imagem, no caso modificar seu tamanho e sua qualidade para diminuir seu tamanho basta seguir os seguintes passos: <br>
+
+    <ul>
+      <li>Clicar na guia arquivo, clicar em abrir, e selecionar a imagem que se deseja modificar</li>
+      <li>Clicar na guia imagem, clicar em redimensionar, modififcar da largura e pressionar tab e clicar no botão redimensionar</li>
+      <li>Clicar na guia arquivo, clicar em exportar como, modifique o nome do arquivo para que não fique igual ao original, clicar em exportar, na nova janela que se abriu deixar no maximo o nivel de compressão, se a imagem for PNG ou deixar a qualidade em no maximo 70%, se a imagem for JPG</li>
+    </ul></p>
+    
+    <h2>Imagem dinâmica</h2>
+    <p>Para adicionar uma imagem em nosso site primeiro temos que entender que trabalharemos com imagens dinâmicas, que são imagens imagens que mudam de tamanho conforme o tamanho da tela, facilitando a visualiazção do site em diferentes tipos de dispositivos, como PCs, Celulares, Tablets, ou até mesmo quando voce diminui um pouco o tamanho do navegador. <br>
+    Portanto, utilizaremos a tag &lt;picture&gt; que serve para indicar o site que trabalharemos com imagens dinâmicas, e por padrão iremos trabalhar com três tamanhos de imagens, pequena, media e grande para isso seguiremos os seguintes passos: 
+    <ul>
+        <li>Criar uma tag  &lt;img&gt;, a qual o navegador ira recorrer para abrir primeiro, e essa deverá ser a maior imagem.</li>
+        <li>Adicionar uma tag &lt;source:media:type&gt;, a qual será utilizada para adicionar a imagem media, e iremos trocar o "min-width" do atributo media por "max-wideth" o qual adicionaremos o tamanho de 1050px, e preencheremos os atributos "srcset" adicionando o caminho até a imagem que iremos utilizar, e em "type" complementaremos com o tipo de imagem que colocamos na imagem.
+        <li>Criaremos uma outra tag &lt;source:media:type&gt; dessa vez para adicionar a imagem pequena, a qual seguiremos o mesmo processo, só que ao invés de colocar o tamanho de 1050px em "max-width", colocaremos o tamanho de 750px.</li>
+    </ul> </p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/imagem-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/imagem-m.png" type="image/png">
+        <img src="imagens/imagem-g.png" alt="imagem teste">
+    </picture>
+    
+    <h1>Aúdio</h1>
+    <h2>Teoria</h2>
+    <p>Trabalhar com audios em html é muito parecido com trabalhar com imagens dinâmicas pois assim  como imagens dinâmica, que deve se adicionar pelo menos três tamanhos da mesma imagem para o navegador puxar aquela a qual melhor se encaixa com o tamanho da tela, devemos adicionar pelo menos três formatos do mesmo audio já que nem todos os navegadores suportam todos os tipos de audio, por isso temos que adicionar pelo menos os tipos mais populares de aúdio (MP3, OGG e WAV) para que o mesmo possa ser tocado em qualquer navegador.<br>
+    </p>
+    <h2>Prática</h2>
+    <p>Para começarmos a trabalhar com aúdios primeiro adicionamos a tag &lt;audio&gt; para indicarmos ao navegador que iremos trabalhar com aúdios e dentro dessa tag adicionaremos a tag &lt;source:src&gt; para adicionarmos os formatos de aúdio que o navegador ira mostrar, ao adicionar essa tag nos depararemos com os seguintes atributos de &lt;source&gt;: "src" ao qual iremos adicionar o arquivo, e o "type" o qual iremos adicionar "audio/nome_do_formato" sendo OGG e WAV o mesmo nome, e o MP3 sendo substituido por "mpeg". <br>
+    Além disso a tag &lt;audio&gt; possui os seguintes atributos: <br>
+    <ul>
+        <li>controls: que da acesso ao player de musica é obrigatorio colocar</li>
+        <li>loop: que o audio rodar em loop</li>
+        <li>preload: que escolhe como o áudio sera carregado, e possui as opções: "auto" que carrega todo o audio, "metadata" que carrega apenas algumas informações e não o aúdio todo, e "none" que não carrega nada do audio até ele ser tocado</li>
+    </ul> </p>
+
+    <audio controls preload="metadata">
+    <source src="audio/Luz Solart - mp3.mp3" type="audio/mpeg">
+    <source src="audio/Luz Solart - ogg.ogg" type="audio/ogg">
+    <source src="audio/Luz Solart - wav.wav" type="audio/wav">
+    </audio>
+
+    <h1>Vídeo</h1>
+    <h2>Teoria</h2>
+    <p>Ao trabalharmos com vídeo em HTML, temos duas opções de adicionar um vídeo em seu site: em um servidor local, ou seja o vídeo esta em hospedado em seu proprio site, fazendo assim com que o seu servidor tenha que processar todas as informações de seu video. E outra maneira é através de um servidor remoto, fazendo assim com que outro servidor tenha que aguentar hospedar o vídeo que será exibido em seu site, sendo as duas mais populares o youtube e o vimeo.</p>
+
+    <h2>Prática</h2>
+    <p>Para incorporar um vídeo de um servidor remoto em seu site é extremamente facíl, por exemplo, no caso de um vídeo estar incorporado a um servidor do youtube, basta acessar o vídeo o qual você deseja adicionar ao seu site, clicar no botão "compartilhar" e em seguida clicar em "incorporar" copiando assim automaticamente o código que você devera colar em seu site para que o vídeo seja exibido.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/vbX50uFYmd0?si=9lR0ZfdCSL75sYoX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <br>
+    <p>Agora para trabalhar com um video em servidor local é bastante parecido com trabalhar com áudios. Para isso você ira criar uma outra pasta dentro da pasta de seu projeto para adicionar o seu vídeo em diferentes formatos, para que ele seja compativel com todos os navegadores, após isso basta adicionar a tag &lt;video&gt; para indicar ao seu site que trabalharemos com video, e dentro adicionar a tag &lt;source:src&gt; para adicionarmos os diferentes formatos de vídeo, sendo o primeiro adicionado o primeiro a ser puxado, em "src" adicionamos o vídeo, e em "type" nós adicionamos video/ e o nome do formato de vídeo. <br>
+    Além disso a tag &lt;video&gt; possui os seguintes parâmetros: <br>
+    <ul>
+        <li>Controls: cria o player de video, sendo assim obrigatorio colocar</li>
+        <li>wideth: modifica a largura e altura do video e da thumbnail</li>
+        <li>poster: adiciona uma imagem paraservir como thumbnail do vídeo.</li>
+    </ul></p>
+    <video controls width="560" poster="imagens/Thumbnail.JPG">
+        <source src="video/VideoWEBM.webm" type="video/webm">
+        <source src="video/VideoMP4.mp4" type="video/mp4">
+        <p>Seu navegador não possui compatibilidadecom esse tipo de video </p>
+    </video>
+    <br>
+    <a href="cap05_Links.html" rel="prev" target="_self">anterior</a> <a href="cap07_BasicoCSS.html" rel="next" target="_self">proximo</a>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 02</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Imagens/logo.ico.ico" type="image/x-icon">
+</head>
+<body>
+ 
+<header>
+    <h1>Curso em foto</h1>
+    <p>Revisando o conteúdo aprendido no módulo 02 do Curso em vídeo</p>
+</header>
+<nav>
+    <a href="pag01.html">Cores</a>
+    <a href="pag02.html">Tipografia</a>
+    <a href="pag03.html">Seletores</a>
+    <a href="pag04.html">Modelo de caixas</a>
+    <a href="pag05.html">Responsividade</a>
+    </nav>
+
+<main>
+    <article>
+        <h1>Tipográfia</h1>
+        
+        <p>A tipografia é a arte e técnica de organizar texto de forma visualmente atraente e legível. Ela envolve a escolha de fontes, tamanhos, espaçamento e outros elementos que influenciam a aparência do texto.</p>
+        
+        <p>
+            Existem vários tipos de fontes, mas os principais são:
+            
+        </p>
+        
+        <ul>
+            <li><strong>Serif:</strong> Fontes com pequenos traços nas extremidades das letras, como Times New Roman. São frequentemente usadas em textos longos, como livros e jornais, pois facilitam a leitura contínua.</li>
+            <li><stong>Sans Serif:</stong> Fontes sem esses traços, como Arial e Helvetica. São mais modernas e limpas, ideais para textos curtos e interfaces digitais.</li>
+            <li><strong>Script:</strong> Fontes que imitam a escrita manual, como Brush Script. São elegantes e usadas em convites e designs que requerem um toque pessoal.</li>
+            <li><strong>Display:</strong> Fontes decorativas e artísticas, usadas para chamar atenção em títulos e logotipos, como Comic Sans e Impact.</li>
+        </ul>
+        
+        <h2>Jeitos de adicionar fonte em HTML</h2>
+        <p>
+            
+            <ul>
+                <li>
+                    <strong>Font-family:</strong> no CSS é usado para definir quais fontes devem ser aplicadas ao texto em uma página web. Ele funciona como uma lista de fontes, onde o navegador tenta aplicar a primeira fonte disponível no dispositivo do usuário. <br>
+                    Por exemplo: <br>
+                    font-family: Arial, Helvetica, sans-serif;
+                </li>
+            
+                <li>
+                    <strong>Google Fonts:</strong> Além disso existe uma maneira de adicionar uma fonte importada da internet, isso permite que o navegador carregue e aplique fontes hospedadas remotamente pelos servidores do Google, sem que você precise armazenar as fontes localmente no servidor do seu site. Isso facilita o uso de fontes personalizadas de forma rápida e eficiente.
+                    Para adicionar  uma fonte do google fonts em seu código, você deverá acessar o google fonts, escolher a fonte desejada, clicar em "get font" clicar em "@import" e copiar o "@import" que esta entre as tags style, e adicionar na página de estilo e adicionar o @ copiado, após isso basta olhar o nome da fonte e adicionar em "font-family".
+                </li>
+            
+                <li>
+                    <strong>Fontes baixadas:</strong> Acessar o site "dafont.com" baixar um estilo de fonte, extrair o seu zip, adicionar os arquivos dentro da pasta do site após isso adicionar a regra "@font-family",  em "font-family:''" adicione um nome para sua fonte em "url:" de ctrl + espaço e selecione o arquivo com a fonte, e na frente disso adicione o comando "format('')" e adicionar o nome  do  formato(TTF TrueType Font - OTF OpenType Font - EOT Embedded OpenType).
+                </li>
+            </ul>
+        </p>
+
+        <h2>Tag's p/fontes</h2>
+        
+           <p>
+               <ul>
+               <li>
+                   <strong>Peso:</strong> Define a espessura das letras. Pode ser um valor numérico (100 a 900, onde 400 é normal e 700 é negrito) ou palavras-chave (normal, bold). <br>
+                   exemplo: <br>
+                   font-weight: 700; /* Negrito */
+               </li>
+               <li>
+                   <Strong>Estilo (font-style): </Strong> Define o estilo da fonte: normal (padrão), italic (itálico) ou oblique (obliquo)<br>
+                   exemplo: <br>
+                   font-style: italic;
+               </li>
+               <li>
+                   <strong>Shorthand (font):</strong>Permite definir várias propriedades de fonte em uma linha, incluindo font-style, font-weight, font-size, line-height, e font-family. <br>
+                   font: [font-style] [font-weight] [font-size] [line-height] [font-family];
+               </li>
+               
+               </ul>
+           </p>
+
+    <aside>
+        <h2>Saiba mais</h2>
+        <div  class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YZfzstEquas?si=jPuR1m1Yh7M5A6fG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </aside> 
+    </article>
+</main>
+
+<footer>
+    <p>Site criado por <strong>Lucas Honorato Benetti</strong></p>
+</footer>
+
+</body>
+</html>

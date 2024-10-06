@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+   <h1>Introdução</h1>
+   <p>Existem três tipos de listas em HTML, as listas ordenadas, listas não ordenadas, e listas mistas. <br>
+    Além disso as lista possuem atributos, que são comandos que utilizamos para complementar as listas, as deixando mais estilizadas. </p>
+    
+    <h1>Listas Ordenas &lt;OL&gt;</h1>
+    <p>
+    Listas Ordenadas são listas que obrigatoriamente devem seguir uma ordem. Por exemplo uma lista de carros mais rapidos do mundo. <br>
+    Para se criar uma lista ordenada adicionamos o comando  &lt;ol&gt; para indicar que estamos criando uma lista ordenada, e dentro dessa lista adicionamos o comando &lt;li&gt; para adicionar um item dentro dessa lista. <br>
+    Podemos também adicionar o comando type dentro do comando ol para adicionar um atributo, e existem os seguintes atributos para uma lista ordenada: <br>
+    -1-numerais<br> 
+    -A-letras maiusculas<br>
+    -a-letras minusculas<br> 
+    -i-numeros romanos em letra minuscula<br> 
+    -I-numeros romanos em letras maiuscula<br>
+    Além disso podemos indicar de que número será começada a contagem, adicionando o comando "start", e indicando o número que ira ser o ponta pé inicial da contagem, dentro do comando recém adicionado.
+    </p>
+    
+
+    <h2>Carros mais rapidos do mundo</h2>
+    <ol type="I" start="3">
+        <li>Hennessey Venom F5</li>
+        <li>Bugatti Chiron</li>
+        <li>SSC Tuatara</li>
+    </ol>
+
+    <h1>Listas Não Ordenadas &lt;UL&gt;</h1>
+    <p>
+        Listas não ordenadas são listas que não seguem um tipo específico de ordem. Por exemplo, uma lista de compras. <br>
+        Para criar uma lista não ordenada, usamos o comando &lt;ul&gt;, e dentro dela adicionamos o comando &lt;li&gt; para adicionar os itens. <br>
+        Para alterar o estilo dos marcadores, podemos usar o atributo "list-style-type" dentro do CSS. Os estilos disponíveis são: <br>
+        - disc: adiciona um disco preenchido, <br>
+        - circle: adiciona um círculo vazio, <br>
+        - square: adiciona um quadrado.
+    </p>
+    <h2>Lista de compras</h2>
+    <ul type="circle">
+        <li>batata</li>
+        <li>cenoura</li>
+        <li>detergente</li>
+        <li>óleo</li>
+    </ul>
+
+    <h1>Listas Mistas</h1>
+    <p>São listas que misturam os dois tipos de listas mostrados anteriormente, as &lt;UL&gt; e as &lt;OL&gt;, colocando uma dentro da outra, não importando se é uma &lt;UL&gt; dentro de uma &lt;OL&gt; ou o contrario, podendo até mesmo adicionar os atributos na &lt;UL&gt; e &lt;UL&gt; normalmente. <br>
+    Essas listas são muito utilizadas para a criação de menus</p>
+    <h2>Locadoea de jogos</h2>
+    <ul type = "square">
+        <li>XBOX 360</li>
+        <ol type="1">
+            <li>Oblivion</li>
+            <li>Devil May Cry</li>
+            <li>Mad Max</li>
+        </ol>
+        <li>Play Station 2</li>
+        <ol type="A">
+            <li>GTA Sandreas</li>
+            <li>GTA Vice City</li>
+            <li>GTA 3</li>
+        </ol>
+        <li>Game Cube</li>
+        <ol type="I">
+            <li>Zelda</li>
+            <li>Mario</li>
+            <li>Mario Kart</li>
+        </ol>
+    </ul>
+    <br>
+    <a href="cap03_Semantica.html" rel="prev" target="_self">anterior</a> <a href="cap05_Links.html" rel="next" target="_self">proximo</a>
+   
+</html>
